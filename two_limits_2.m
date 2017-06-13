@@ -1,0 +1,18 @@
+delta_T=43;
+delta_P=50;
+rho=1.225;
+k=0.0242;
+cp=1006.43;
+mu=1.7894e-5;
+alpha=k/rho/cp;
+d=[0.00001 0.0005 0.0025 0.005 0.01];
+Lp=[0.01 0.01 0.01 0.01 0.01]; 
+V=[7.85E-13 1.96E-09 4.91E-08 1.96E-07 7.85E-07];
+Q1 =rho*cp*delta_T*delta_P/32/mu.*d.^4./Lp.^1;
+Q2 =4*k*delta_T./sqrt(alpha*Lp)./d.*(2*delta_P./rho)^0.25.*(Lp).*(d .^2);
+R1=delta_T./Q1 ;
+R2=delta_T./Q2 ;
+R_sim=[1.70E+06 3.86E+03 3.07E+02 1.50E+02 7.47E+01];
+d_by_Lp=[0.001 0.05 0.25 0.5 1];
+plot(d_by_Lp,log(R1),d_by_Lp,log(R2),d_by_Lp,log(R_sim));
+legend('d tends to 0','d tends to inf','Simulation Results');
