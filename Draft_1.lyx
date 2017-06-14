@@ -1,0 +1,1792 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Designed Periodic Cellular Materials for Enhanced Air-cooled Heat Sinks
+\end_layout
+
+\begin_layout Section
+Analytical modelling
+\end_layout
+
+\begin_layout Standard
+In order to develop a theoretical understanding for the flow distribution
+ across the model unit-cell and the pressure drop across it, the most basic
+ mass and momentum balance principles have been invoked on flow elements
+ in that intake and exit conduits.
+ The resultant mathematical model that describes the flow behaviour reveals
+ an important non-dimensional parameter (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$m^2$
+\end_layout
+
+\end_inset
+
+) which broadly captures the effect of important design parameters and whose
+ relative magnitude (with respect to similar alternate design configurations)
+ necessarily reveals the degree of the flow evenness
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+flow performance
+\end_layout
+
+\end_inset
+
+.
+ The model also provides insight on the scaling of the pressure drop across
+ the heat sink unit cell given a particular value of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$m^2$
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+All calculations for the model are based on one-dimensional flow equations
+ under simplifying assumptions.
+ The panel of lateral pores is modelled as of a single layer of adjacently
+ stacked thin cylinders of diameter 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$d$
+\end_layout
+
+\end_inset
+
+ and length 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$L_p$
+\end_layout
+
+\end_inset
+
+.
+ These are assumed to have a wall thickness 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$<<$
+\end_layout
+
+\end_inset
+
+ any of the characteristic dimensions (
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$d/100$
+\end_layout
+
+\end_inset
+
+).
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ These lateral pores form sharp junctions at right angles to either of the
+ conduit axes.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is from Bajura
+\end_layout
+
+\end_inset
+
+In the dividing-flow- type inlet conduit, the fluid progresses and as it
+ approaches the lateral pore, some fluid is lost through it and the remainder
+ of the flow proceeds downstream at an ever decreasing flow rate.
+ In the combining flow case in the exit conduit, fluid approaches the branch
+ point along both the conduit and the lateral pore (cylinder).
+ These fluid streams combine at the branch point and proceed down- stream
+ along the manifold at an ever increasing flow rate.
+ Primary frictional losses are accounted for by 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$90^{
+\backslash
+circ}$
+\end_layout
+
+\end_inset
+
+ turning losses, pore wall friction losses and expansion-contraction losses
+ (into and out of the pores respectively).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider an incompressible fluid flowing isothermally along the inlet conduit
+ of uniform cross- sectional area 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$A_i$
+\end_layout
+
+\end_inset
+
+ as illustrated by Fig.
+ (??).
+ The control volume is shown with dotted line.
+ A part of the incoming flow branches into the lateral pore as a result
+ of the pressure difference in the inlet conduit and the ambient.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P_i(x)$
+\end_layout
+
+\end_inset
+
+ is the static pressure at a location x in the inlet conduit.
+ Since the flow decelerates due to loss of fluid to the lateral pore, the
+ pressure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P_i(x+
+\backslash
+Delta x)$
+\end_layout
+
+\end_inset
+
+ is greater than the upstream pressure 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$P_i(x)$
+\end_layout
+
+\end_inset
+
+.
+ Fluid is transported to the lateral pore with a normal velocity 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$U_c$
+\end_layout
+
+\end_inset
+
+ while retaining an axial velocity component 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$W_c$
+\end_layout
+
+\end_inset
+
+ as seen in Fig.
+ (??).
+ Using the principle of mass balance, we thus have : This when solved for
+ the pore normal velocity gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{in-mass}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+rho {{A}_{i}}{{W}_{i}}=
+\backslash
+rho {{A}_{i}}({{W}_{i}}+
+\backslash
+frac{d{{W}_{i}}}{dx}.
+\backslash
+Delta x)+
+\backslash
+rho {{A}_{c}}{{U}_{c}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This when solved for the pore normal velocity gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{in-uc}
+\end_layout
+
+\begin_layout Plain Layout
+
+{{U}_{c}}
+\backslash
+,=-
+\backslash
+frac{{{A}_{i}}L}{{{A}_{c}}.n}.
+\backslash
+frac{d{{W}_{i}}}{dx} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The principle of momentum balance for the axial 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+ direction on the control volume yields
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{in-mom}
+\end_layout
+
+\begin_layout Plain Layout
+
+{{P}_{i}}A+
+\backslash
+rho {{A}_{i}}{{W}_{i}}^{2}={{A}_{i}}({{P}_{i}}+
+\backslash
+frac{d{{P}_{i}}}{dx}.
+\backslash
+Delta x)+{{
+\backslash
+tau }_{w}}.
+\backslash
+pi .{{D}_{i}}.
+\backslash
+Delta x+
+\backslash
+rho {{A}_{i}}{{({{W}_{i}}+
+\backslash
+frac{d{{W}_{i}}}{dx}.
+\backslash
+Delta x)}^{2}}+
+\backslash
+rho {{A}_{c}}{{U}_{c}}{{W}_{c}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now assuming the Darcy-Weisbach correlation 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+${{
+\backslash
+tau }_{w}}=f.
+\backslash
+frac{
+\backslash
+rho {{W}_{i}}^{2}}{8}$
+\end_layout
+
+\end_inset
+
+ to hold true in the conduit, and upon neglecting higher order terms of
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+Delta x$
+\end_layout
+
+\end_inset
+
+, we have :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{in-mom-final}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{1}{
+\backslash
+rho }.
+\backslash
+frac{d{{P}_{i}}}{dx}+
+\backslash
+frac{{{f}_{i}}}{2{{D}_{i}}}{{W}_{i}}^{2}+(2-{{
+\backslash
+beta }_{i}}){{W}_{i}}
+\backslash
+frac{d{{W}_{i}}}{dx}=0
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation} 
+\end_layout
+
+\end_inset
+
+where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_i=
+\backslash
+frac{W_i}{W_c}$
+\end_layout
+
+\end_inset
+
+ .
+ Similar to the inlet conduit mass balance eqs.
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{in-mass}
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{in-uc}
+\end_layout
+
+\end_inset
+
+), the mass balance on control volume shown in Fig.
+ (??) on the exit conduit gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{out-uc}
+\end_layout
+
+\begin_layout Plain Layout
+
+{{U}_{c}}
+\backslash
+,=
+\backslash
+frac{{{A}_{e}}L}{{{A}_{c}}.n}.
+\backslash
+frac{d{{W}_{e}}}{dx}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Momentum balance principle on the control volume shown in Fig.
+ (??) on the exit conduit yields (similar to eq.
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{in-mom-final}
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{out-mom-final}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{1}{
+\backslash
+rho }.
+\backslash
+frac{d{{P}_{e}}}{dx}+
+\backslash
+frac{{{f}_{e}}}{2{{D}_{e}}}{{W}_{e}}^{2}+(2-{{
+\backslash
+beta }_{e}}){{W}_{e}}
+\backslash
+frac{d{{W}_{e}}}{dx}=0
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eqs.
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{in-uc}
+\end_layout
+
+\end_inset
+
+) and (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{out-uc}
+\end_layout
+
+\end_inset
+
+) together yield the following relation between the inlet and the exit conduit
+ velocities at any 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+under the boundary condition 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$W_e=0$ at $x=0$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$W_i=W_o$ at $x=0$
+\end_layout
+
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{vel-relation}
+\end_layout
+
+\begin_layout Plain Layout
+
+{{W}_{e}}=
+\backslash
+left( {{W}_{o}}-{{W}_{i}} 
+\backslash
+right)
+\backslash
+frac{{{A}_{i}}}{{{A}_{e}}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now subtracting eq.
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{out-mom-final}
+\end_layout
+
+\end_inset
+
+) from eq.
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{in-mom-final}
+\end_layout
+
+\end_inset
+
+), we get the following equation : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{combined-mom}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{1}{
+\backslash
+rho}.
+\backslash
+frac{d({{P}_{i}}-{{P}_{e}})}{dx}+
+\backslash
+frac{{{f}_{i}}}{2{{D}_{i}}}{{W}_{i}}^{2}-
+\backslash
+frac{{{f}_{e}}}{2{{D}_{e}}}{{W}_{e}}^{2}+(2-{{
+\backslash
+beta}_{i}}){{W}_{i}}
+\backslash
+frac{d{{W}_{i}}}{dx}-(2-{{
+\backslash
+beta }_{e}}){{W}_{e}}
+\backslash
+frac{d{{W}_{e}}}{dx}=0
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Additionally, we write the pressure drop for a pore at a location 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$x$
+\end_layout
+
+\end_inset
+
+ as follows : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{zeta-def}
+\end_layout
+
+\begin_layout Plain Layout
+
+{{P}_{i}}-{{P}_{e}}=
+\backslash
+rho(1+{{C}_{fi}}+{{C}_{fe}}+{{f}_{c}}
+\backslash
+frac{{{l}_{c}}}{{{d}_{c}}}){{U}_{c}}^{2}=
+\backslash
+rho 
+\backslash
+zeta 
+\backslash
+frac{{{U}_{c}}^{2}}{2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_{fi}$
+\end_layout
+
+\end_inset
+
+ is coefficient of turning loss from the intake conduit into the lateral
+ pore and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_{fe}$
+\end_layout
+
+\end_inset
+
+ that of turning loss from the lateral pore into the exhaust conduit, and
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$f_c$
+\end_layout
+
+\end_inset
+
+ is average friction coefficient for the flow through the pore.
+\end_layout
+
+\begin_layout Standard
+Now using relations in eqs.
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{in-uc}
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{out-uc}
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{vel-relation}
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{zeta-def}
+\end_layout
+
+\end_inset
+
+) to simplify eq.
+ (
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{combined-mom}
+\end_layout
+
+\end_inset
+
+) above and also non-dimensionalising the equation with 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+${{p}_{i}}=
+\backslash
+frac{{{P}_{i}}}{
+\backslash
+rho{{W}_{o}}^{2}},{{p}_{e}}=
+\backslash
+frac{{{P}_{e}}}{
+\backslash
+rho{{W}_{o}}^{2}}{{w}_{i}}=
+\backslash
+frac{{{W}_{i}}}{{{W}_{o}}},{{w}_{e}}=
+\backslash
+frac{{{W}_{e}}}{{{W}_{o}}},{{u}_{c}}=
+\backslash
+frac{{{U}_{c}}}{{{W}_{o}}},X=
+\backslash
+frac{x}{L}$
+\end_layout
+
+\end_inset
+
+, we get the following control equation that governs the velocity variation
+ (here we ignore the solution 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+frac{dw_i}{dX}=0$
+\end_layout
+
+\end_inset
+
+ since velocity cannot have a constant profilw : 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{controleq}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{{{d}^{2}}(1-{{w}_{i}})}{d{{X}^{2}}}-{{m}^{2}}(1-{{w}_{i}})=
+\backslash
+varepsilon
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{msq}
+\end_layout
+
+\begin_layout Plain Layout
+
+{{m}^{2}}=
+\backslash
+left
+\backslash
+{ 
+\backslash
+left[ 
+\backslash
+frac{2-{{
+\backslash
+beta }_{e}}}{2-{{
+\backslash
+beta }_{i}}} 
+\backslash
+right].{{
+\backslash
+left[ 
+\backslash
+frac{{{A}_{i}}}{{{A}_{e}}} 
+\backslash
+right]}^{2}}-1 
+\backslash
+right
+\backslash
+}.
+\backslash
+varepsilon
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+and
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{epsilon} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+varepsilon
+\backslash
+,=
+\backslash
+frac{
+\backslash
+left( 2-{{
+\backslash
+beta }_{i}} 
+\backslash
+right)}{
+\backslash
+zeta{{
+\backslash
+left[
+\backslash
+frac{{{A}_{i}}}{n{{A}_{c}}} 
+\backslash
+right]}^{2}}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This control equation can be solved under the known boundary conditions
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$w_i=1$ at $x=0$ and $w_i=0$ at $x=1$
+\end_layout
+
+\end_inset
+
+.
+ The solution will be different depending on the sign of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$m^2$
+\end_layout
+
+\end_inset
+
+.
+ It has been found from a large set 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+DO we need details of the range of validity of the values like range of
+ d/Lp or Lc/w??
+\end_layout
+
+\end_inset
+
+of computational data that for all practical purposes 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+beta_i
+\backslash
+simeq0.83$
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$0.02 
+\backslash
+leq 
+\backslash
+beta_e 
+\backslash
+leq 0.1$
+\end_layout
+
+\end_inset
+
+.
+ For such a case, the value of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$m^2$
+\end_layout
+
+\end_inset
+
+ is necessarily 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$>0$
+\end_layout
+
+\end_inset
+
+.
+ Although eq.(
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{controleq}
+\end_layout
+
+\end_inset
+
+) could also be solved for cases where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$m^2
+\backslash
+leq0$
+\end_layout
+
+\end_inset
+
+, we present the solution for cases where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$m^2>0$
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{list}{}{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item{Inlet and Exit Conduit velocities ($w_i$ and $w_e$)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{wi} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align}
+\end_layout
+
+\begin_layout Plain Layout
+
+{{w}_{i}}&=1-
+\backslash
+left( 
+\backslash
+frac{
+\backslash
+sinh (mX)}{
+\backslash
+sinh (m)} 
+\backslash
+right)+
+\backslash
+frac{
+\backslash
+varepsilon }{{{m}^{2}}}
+\backslash
+left[ 1-
+\backslash
+left( 
+\backslash
+frac{
+\backslash
+sinh (mX)}{
+\backslash
+sinh (m)} 
+\backslash
+right)-
+\backslash
+left( 
+\backslash
+frac{
+\backslash
+sinh (m(1-X))}{
+\backslash
+sinh (m)} 
+\backslash
+right) 
+\backslash
+right] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation} 
+\end_layout
+
+\begin_layout Plain Layout
+
+%% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{we}  
+\end_layout
+
+\begin_layout Plain Layout
+
+{{w}_{e}}=
+\backslash
+left( 1-{{w}_{i}} 
+\backslash
+right)
+\backslash
+frac{{{A}_{i}}}{{{A}_{e}}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation} 
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item{Channel Velocity ($u_c$)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{uc} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{{u}_{c}}=
+\backslash
+left( 
+\backslash
+frac{{{A}_{i}}}{{{A}_{c}}n} 
+\backslash
+right)
+\backslash
+left
+\backslash
+{ 
+\backslash
+left( 
+\backslash
+frac{m}{
+\backslash
+sinh (m)} 
+\backslash
+right)
+\backslash
+left[ 
+\backslash
+cosh (mX)+
+\backslash
+frac{
+\backslash
+varepsilon }{{{m}^{2}}}
+\backslash
+left( 
+\backslash
+cosh (mX)-
+\backslash
+cosh (m(1-X)) 
+\backslash
+right) 
+\backslash
+right] 
+\backslash
+right
+\backslash
+}  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}  
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item{Local pressure drops ($p_i-p_e$) 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{dp} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{{p}_{i}}-{{p}_{e}}={
+\backslash
+frac{
+\backslash
+zeta}{2}}.{{{
+\backslash
+left( 
+\backslash
+frac{{{A}_{i}}}{{{A}_{c}}n} 
+\backslash
+right)}^{-2}}}
+\backslash
+;
+\backslash
+times 
+\backslash
+left
+\backslash
+{ {{
+\backslash
+left( 
+\backslash
+frac{m}{
+\backslash
+sinh (m)} 
+\backslash
+right)}^{2}}{{
+\backslash
+left[ 
+\backslash
+cosh (mX)+
+\backslash
+frac{
+\backslash
+varepsilon }{{{m}^{2}}}
+\backslash
+left( 
+\backslash
+cosh (mX)-
+\backslash
+cosh (m(1-X)) 
+\backslash
+right) 
+\backslash
+right]}^{2}} 
+\backslash
+right
+\backslash
+}  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation} 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item{Net pressure drop  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation} 
+\backslash
+label{netdp} 
+\end_layout
+
+\begin_layout Plain Layout
+
+{{
+\backslash
+left.
+ {{p}_{i}} 
+\backslash
+right|}_{X=0}}-{{
+\backslash
+left.
+ {{p}_{e}} 
+\backslash
+right|}_{X=1}}={
+\backslash
+frac{
+\backslash
+zeta}{2}}.{{{
+\backslash
+left( 
+\backslash
+frac{{{A}_{i}}}{{{A}_{c}}n} 
+\backslash
+right)}^{-2}}}
+\backslash
+;
+\backslash
+times 
+\backslash
+left
+\backslash
+{ {{
+\backslash
+left( 
+\backslash
+frac{m}{
+\backslash
+tanh (m)} 
+\backslash
+right)}^{2}}+
+\backslash
+varepsilon 
+\backslash
+left( 1+
+\backslash
+frac{
+\backslash
+varepsilon }{{{m}^{2}}} 
+\backslash
+right){{
+\backslash
+left( 
+\backslash
+frac{
+\backslash
+left( 1-
+\backslash
+operatorname{sech}(m 
+\backslash
+right)}{
+\backslash
+tanh (m)} 
+\backslash
+right)}^{2}} 
+\backslash
+right
+\backslash
+}  
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation} 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{list}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
