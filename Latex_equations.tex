@@ -1,0 +1,52 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\begin{document}
+%
+\section{ }
+\textbf{Inlet Conduit velocity ($w_i$)}
+\begin{equation}\label{wi} 	
+\begin{split}
+{w}_{i}=1-\left( \frac{\sinh (mX)}{\sinh (m)} \right)+\frac{\varepsilon }{{m}^{2}}\Biggl[ 1 & - \left( \frac{\sinh (mX)}{\sinh (m)} \right) \\
+& -\left( \frac{\sinh (m(1-X))}{\sinh (m)} \right) \Biggr]
+\end{split}
+\end{equation}
+%
+%
+\textbf{Exit Conduit velocity ($w_e$)}
+\begin{equation}\label{we}
+{w}_{e}=\left( 1-{w}_{i} \right)\frac{{A}_{i}}{{A}_{e}}
+\end{equation}
+%
+%
+\textbf{Channel Velocity ($u_c$)}
+\begin{equation} \label{uc} 
+\begin{split}
+{{u}_{c}}=\left(\frac{{A}_{i}}{{{A}_{c}}n} \right) \left( \frac{m}{\sinh (m)} \right) &  \Biggl[ \cosh (mX)  \\ 
+ & + \frac{\varepsilon }{{m}^{2}}\biggl( \cosh (mX)-\cosh (m(1-X)) \biggr) \Biggr]
+\end{split}
+\end{equation}
+%
+%
+\textbf{Local pressure drop ($p_i-p_e$)}
+\begin{equation} \label{dp} 
+\begin{split}
+{{p}_{i}}-{{p}_{e}}={\frac{\zeta}{2}}.\left( \frac{{A}_{i}}{{{A}_{c}}n} \right)^{-2}\; {\left( \frac{m}{\sinh (m)} \right)}^{2}\Biggl\{ & \cosh (mX)
++\frac{\varepsilon }{{{m}^{2}}}\biggl( \cosh (mX)\\
+& - \cosh (m(1-X)) \biggr) \Biggr\}^{2}
+\end{split}
+\end{equation}
+%
+%
+\textbf{Net pressure drop}
+\begin{equation} \label{netdp} 
+\begin{split}
+{{\left. {{p}_{i}} \right|}_{X=0}}-{{\left. {{p}_{e}} \right|}_{X=1}}={\frac{\zeta}{2}}.{{{\left( \frac{{{A}_{i}}}{{{A}_{c}}n} \right)}^{-2}}}\; \Biggl\{ & {{\left( \frac{m}{\tanh (m)} \right)}^{2}} \\
+& +\varepsilon \left( 1+\frac{\varepsilon }{{{m}^{2}}} \right){{\left( \frac{\left( 1-\operatorname{sech}(m \right)}{\tanh (m)} \right)}^{2}} \Biggr\}  
+\end{split}
+\end{equation} 
+%
+\end{document}
