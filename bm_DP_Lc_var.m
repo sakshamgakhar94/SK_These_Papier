@@ -1,18 +1,20 @@
-Lc = [0.015 0.0075 0.01 0.01 0.01];
+% Note that Lp and w are held constant for these
+
+Lc = [0.015 0.0075 0.01 20/3000 0.01];
 d = [2.50E-03 2.50E-03 3.33E-03 (5/3000) 0.00025];
 w = [0.025 0.025 0.025 0.025 0.025];
-zeta = [5.274606666 4.922168903 4.834588912 5.62704443 51.47355896];
+zeta = [5.274606666 4.922168903 4.834588912 5.128310069 51.47355896];
 Lp = 0.005;
 
 len=length(Lc);
 
 x=cell(1,4);
 for r=1:1:len
-a = linspace(0,Lc(r),100);
+a = linspace(0,1,100);%(0,Lc(r),100);
 x{r} = a;
 end
 beta_out = [0.1 0.1 0.1 0.1 0.1];
-beta_in = [0.8 0.8 0.8 0.8 0.8];
+beta_in = [0.83 0.83 0.83 0.83 0.83];
 rho = 1.225;
 vo=1;
 
@@ -55,22 +57,25 @@ Lc_by_w = Lc./w;
 % xlabel('Linear location of channel \it (x)','FontSize',10,'FontWeight','bold')
 % ylabel('\Delta P \it (x)','FontSize',10)
 
-xcomp={}; pi_minus_pe_comp={};
-xcomp{1} = [0.0012625 0.0037875 0.0063125 0.0088375 0.0113625 0.0139];
+xcomp={}; pi_minus_pe_comp={}; xcomp_raw={};
+xcomp_raw{1} = [0.0012625 0.0037875 0.0063125 0.0088375 0.0113625 0.0139];
 pi_minus_pe_comp{1} = [5.913092 6.092915 6.408052 6.86852 7.5590355 8.45639298];
 %
-xcomp{2} = [0 0.0013 0.0025 0.0038 0.0051 0.0063];
+xcomp_raw{2} = [0 0.0013 0.0025 0.0038 0.0051 0.0063];
 pi_minus_pe_comp{2} = [20.566652 21.057894 21.395907 22.207113 22.864066 23.9916748];
 %
-xcomp{3} = [0 0.00168165 0.0033633 0.00504495 0.006734925 0.0084249];
+xcomp_raw{3} = [0 0.00168165 0.0033633 0.00504495 0.006734925 0.0084249];
 pi_minus_pe_comp{3} = [10.970925 11.367922 11.615892 12.266868 12.803279 14.6143353];
 %
-xcomp{4} = [0.00084335 0.00253005 0.00421675 0.00590345 0.00759015 0.0092852];
+xcomp_raw{4} = [0.00084335 0.00253005 0.00421675 0.00590345 0.00759015 0.0092852];
 pi_minus_pe_comp{4} = [15.987436 16.232824 16.653054 17.254054 18.0385697 18.91306296];
 %
-xcomp{5} = [0.00441875 0.00467125 0.00492375 0.00921625 0.00946875 0.0097225];
+xcomp_raw{5} = [0.00441875 0.00467125 0.00492375 0.00921625 0.00946875 0.0097225];
 pi_minus_pe_comp{5} = [257.9775 258.24779 259.25367 264.608561 265.390512 266.234428];
 
+for t=1:1:len
+    xcomp{t} = (xcomp_raw{t}-min(xcomp_raw{t}))./(max(xcomp_raw{t})-min(xcomp_raw{t}));
+end
 % figure(2)
 % grid on;
 % hold on;
@@ -92,7 +97,7 @@ p=5;
 % [AX,H1,H2] = plotyy(x{p},pi_minus_pe{p},xcomp{p},pi_minus_pe_comp{p},'plot');
 obj=title(sprintf('$m^2 = %0.4f$; $L_c/w = %0.2f$; $d/L_p = %0.3f$',m_sq(p),param1(p),param2(p)));
 set(obj,'Interpreter','Latex','FontSize',9,'FontWeight','bold');
-xlabel('$x/w$','Interpreter','Latex','FontSize',11,'FontWeight','bold');
+xlabel('$x^*$','Interpreter','Latex','FontSize',11,'FontWeight','bold');
 grid on;
 set(HA1,'LineStyle','--','LineWidth',2)
 set(HA2,'LineStyle',':','marker','o','LineWidth',2)
@@ -105,7 +110,7 @@ p=3;
 % [AX,H1,H2] = plotyy(x{p},pi_minus_pe{p},xcomp{p},pi_minus_pe_comp{p},'plot');
 obj=title(sprintf('$m^2 = %0.4f$; $L_c/w = %0.2f$; $d/L_p = %0.3f$',m_sq(p),param1(p),param2(p)));
 set(obj,'Interpreter','Latex','FontSize',9,'FontWeight','bold');
-xlabel('$x/w$','Interpreter','Latex','FontSize',11,'FontWeight','bold');
+xlabel('$x^*$','Interpreter','Latex','FontSize',11,'FontWeight','bold');
 grid on;
 set(HB1,'LineStyle','--','LineWidth',2)
 set(HB2,'LineStyle',':','marker','o','LineWidth',2)
@@ -118,7 +123,7 @@ p=1;
 % [AX,H1,H2] = plotyy(x{p},pi_minus_pe{p},xcomp{p},pi_minus_pe_comp{p},'plot');
 obj=title(sprintf('$m^2 = %0.4f$; $L_c/w = %0.2f$; $d/L_p = %0.3f$',m_sq(p),param1(p),param2(p)));
 set(obj,'Interpreter','Latex','FontSize',9,'FontWeight','bold');
-xlabel('$x/w$','Interpreter','Latex','FontSize',11,'FontWeight','bold');
+xlabel('$x^*$','Interpreter','Latex','FontSize',11,'FontWeight','bold');
 grid on;
 set(HC1,'LineStyle','--','LineWidth',2)
 set(HC2,'LineStyle',':','marker','o','LineWidth',2)
