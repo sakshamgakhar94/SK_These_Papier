@@ -155,6 +155,7 @@ The lower picture in Fig. (\ref{exploded}) shows a heat sink with periodic cellu
 \vspace{-1.5ex}
 \caption{\small{HEATED SUBSTRATE MOUNTED WITH SERPENTINE CORRUGATIONS OF PERIODIC MATERIAL. THE POROUS STRUCTURE OF THE PERIODIC FIN IS APPROXIMATED WITH PORES OF TORTUOSITY = 1}}
 \label{exploded}
+%\vspace{-2ex}
 \end{figure}
 %
 In practice, it is understood that this periodic porous fin structure is 3-D and has a corresponding permeability matrix, but we make an important approximation by modelling this porous screen by only a single layer of cylinders (i.e. pores of tortuosity =1) that act as channels between the inlet conduit and the exit conduit. As a consequence, there is no permeability for flow between the cylinders or in other words, flow is restricted to take a 90$^\circ$ bend when it enters or emerges out of the channel and thereby flows axially through these channels (thus a 1-D flow through the pores).
@@ -448,7 +449,7 @@ The boundary conditions used in the simulations are enumerated next.
 \subsection{Validation of the model}
 Although it is feasible to reliably model and predict the fluid velocities and pressure drops in a prospective heat sink through numerical simulations, the path to such an analysis may not be the best when a suitable model, such as the one discussed in section \ref{BMmodel} can be used instead. In this section we present the comparison of local pressure drops across each of the cylindrical pores and inlet \& exit conduit velocity variations. The results have been obtained from the analytical model of section \ref{BMmodel} and from numerical simulations with specifics discussed in section \ref{compmodel}. The excellent corroboration between the numerical and analytical results makes it feasible to reliably predict the flow distribution through results of the analytical model. 
 %
-\subsubsection*{Inlet and exit conduit velocities:} It is not easy to numerically validate any given configuration since it is an expensive task both computation-wise and in time to generate unit cells for different configurations. However, it is relatively easier to validate the theoretical predictions by varying the diameter $d$ and length of conduit $L_C$ (holding length of pore -- $L_p$, conduit width -- $w$ as constants) and studying the results for a variety of configurations. Figs. (\ref{velvalid_a}) and (\ref{velvalid_c}) show the comparison of the $x$ variation of non-dimensional velocities for 3 different configurations. The dotted blue and black lines represent the analytical results for the $ x $ variation of the inlet and exit conduit velocities respectively. The computational results are in extremely good agreement not only for these 3 representative configurations, but also for other configurations tested over a wide range of $d/L_p$ and $L_C/w$ with maximum deviation between the two predictions being anywhere between 8-10$\%$.
+\subsubsection*{Inlet and exit conduit velocities:} It is not easy to numerically validate any given configuration since it is an expensive task both computation-wise and in time to generate unit cells for different configurations. However, it is relatively easier to validate the theoretical predictions by varying the diameter $d$ and length of conduit $L_C$ (holding length of pore -- $L_p$, conduit width -- $w$ as constants) and studying the results for a variety of configurations. Figs. (\ref{velvalid_a}) and (\ref{velvalid_c}) show the comparison of the $x$ variation of non-dimensional velocities for 2 different configurations. The dotted blue and black lines represent the analytical results for the $ x $ variation of the inlet and exit conduit velocities respectively. The computational results are in extremely good agreement not only for these 2 representative configurations, but also for other configurations tested over a wide range of $d/L_p$ and $L_C/w$ with maximum deviation between the two predictions being anywhere between 8-10$\%$.
 %
 \begin{figure}
 \centering
@@ -471,6 +472,7 @@ Although it is feasible to reliably model and predict the fluid velocities and p
    \label{velvalid_c} 
 \end{subfigure}
 %
+\vspace{-3em}
 \caption{INLET \& EXIT CONDUIT VELOCITIES}
 \vspace{-3em}
 \end{figure}
@@ -500,8 +502,9 @@ Although it is feasible to reliably model and predict the fluid velocities and p
 %   \label{pres_c} 
 %\end{subfigure}
 %
+\vspace{-2.5em}
 \caption{LOCAL PRESSURE DROPS}
-\vspace{-3em}
+\vspace{-3.5em}
 \end{figure}
 %
 %
@@ -529,8 +532,9 @@ We theoretically postulated the existence of an optimal channel size ratio ($d/L
 %   \label{Rmin_c} 
 %\end{subfigure}
 %
+\vspace{-2.5em}
 \caption{EXISTENCE OF OPTIMAL GEOMETRY}
-\vspace{-3em}
+\vspace{-3.5em}
 \end{figure}
 %
 %
@@ -569,8 +573,9 @@ Fig. (\ref{optgeo_a}) for $L_C/w=1$ shows that the $0.2 \leq \text{optimal } d/L
 %   \label{optgeo_c} 
 %\end{subfigure}
 %
+\vspace{-2em}
 \caption{CHOICE OF OPTIMAL CHANNEL TOPOLOGY}
-\vspace{-3em}
+\vspace{-3.5em}
 \end{figure}
 %
 %
@@ -579,6 +584,7 @@ Fig. (\ref{optgeo_a}) for $L_C/w=1$ shows that the $0.2 \leq \text{optimal } d/L
 \subsection{Optimal Number of Fins per Inch}\label{fpi}
 So far we have considered a periodically repeating unit cell. But given a fixed length of heated substrate, what are the design rules for determination of the number of fins (or unit cells) that can be mounted over it? This question can be addressed by looking at the behaviour of $R_{thermal}$ as a function of variable width of the conduit $w$ holding the conduit length -- $L_C$ as constant. Over the range of $d/L_p$ investigated for variable $w$ configurations, the values of $R_{thermal}$ are seen to be monotonically increasing. More importantly, it is found that for a given porosity (or $d/L_p$), design configurations with smaller $w/L_C$ perform better in terms of offering lower thermal resistance -- $R_{thermal}$. These observations made from Fig. (\ref{fpi:fig}), along with discussion of section \ref{choiceofdesign} are instinctive and reveal the importance of selecting appropriate $w/L_C$ and $d/L_p$ for the design configuration. 
 %
+\vspace{-1.2em}
 \begin{figure}[ht]
 \centerline{\includegraphics[width=1.1\linewidth]{fpi.eps}}
 \vspace{-0.5em}
@@ -588,7 +594,7 @@ So far we have considered a periodically repeating unit cell. But given a fixed 
 \end{figure}
 %%%%%%%%%%%%%
 \section{CONCLUDING REMARKS}
-Open-cellular periodic structures arranged in a corrugated geometry are investigated as prospective fin mountings for heated substrates to evolve more efficient air-cooled heat sinks beyond conventional alternatives. Theoretical model for the flow distribution is corroborated against computational results and found to be reasonably predictive of the flow distributions and  the pressure drops in the designed heat sink. Theoretical predictions for optimal design porosity leading to microscopic heat transfer optimisation have also been confirmed computationally. Furthermore, a simultaneous study of heat transfer density for variable $d/L_p$ and $w/L_C$ analysed alongside degree of flow uniformity (the requisite for macroscopic heat transfer optimisation) paves the way for the choice of optimal design configuration and the optimal fins per inch that can be fitted onto a given length of substrate. Prospectively, the scope for further improvement in heat transfer lies in increasing the number of layers of periodic pores, testing alternate cross-sectional shapes of the designed pores (squares, triangles etc.), and changing the angle of bend (beyond 90$^\circ$) for the serpentine corrugations.
+Corrugated arrangements of open-cellular periodic structures are investigated as prospective fin mountings for heated substrate to evolve more efficient air-cooled heat sinks beyond conventional alternatives. Theoretical model for the flow distribution is developed and corroborated against computational results. The model is found to be reasonably predictive of the fluid velocity distributions and pressure drops in the designed heat sink. Estimates for optimal design porosity leading to microscopic heat transfer optimisation are obtained theoretically and confirmed computationally. Furthermore, a simultaneous study of heat transfer density for variable $d/L_p$ and $w/L_C$ analysed alongside degree of flow uniformity (the requisite for macroscopic heat transfer optimisation) paves the way for the choice of optimal design configuration and the optimal fins per inch that can be fitted onto a given length of substrate. Prospectively, the scope for further improvement in heat transfer lies in increasing the number of layers of periodic pores, testing alternate cross-sectional shapes of the designed pores (squares, triangles etc.), and changing the angle of bend (beyond 90$^\circ$) for the serpentine corrugations.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bibliographystyle{ihmtc}
